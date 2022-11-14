@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="stylesheet" href="main.css"> -->
+
+		<title>Flappy Bird</title>
+
+		<style>
+			* { padding: 0; margin: 0; }
+			#canvas-container {
+				width: 100vw;
+				height: 100vh;
+				z-index: 100;
+				background-color: rgb(70, 70, 70);
+				display: flex;
+				justify-content: center;
+			}
+
+			#rendering-canvas {
+				margin-top: 20px;
+				/* width: 600px;
+				height: 800px; */
+				stroke-width: 40px;
+				stroke: rgb(153, 153, 153);
+				box-shadow: 2px 5px 5px 0 rgb(255, 255, 255);
+				border-radius: 40px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="canvas-container">
+			<canvas id="rendering-canvas">
+				Sorry Your Browser does not support this element. <br>
+				Please Use a newer browser
+			</canvas>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="/index.js"></script>
+	<script type="text/javascript" src="/genetic_algorithm.js"></script>
+	<script type="text/javascript" src="/controller.js"></script>
+
+</html>
